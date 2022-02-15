@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    <script src="./scripts/script.js" defer></script>
+    <title>Sign-Up Form</title>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="left-background">
+        <div class="background-text-container">
+          <div class="background-text">LAND</div>
+        </div>
+      </div>
+      <div class="form-header-container">
+        <p class="form-header-text">
+          This is not a real online service, but I'm glad you made it here. Please feel free to test my form validation for the entries below.
+          Don't forget to enter all required (*) fields before submitting. <br><br> Sign up <i>now</i> to get started.<br><br></p>
+      </div>
+      <form action="#" id="create-account">
+        <div class="form-entries-container">
+          <p>Let's do this!</p>
+          <div class="form-entries-container-items">
+            <label for="first-name">First Name
+              <input type="text" id="first-name" name="first-name" required title="Enter your first name" 
+              oninvalid="this.setCustomValidity('Please Enter valid name')" oninput="setCustomValidity('')" formnovalidate>
+            </label>
+            <label for="last-name">Last Name
+              <input type="text" id="last-name" name="last-name" required title="Enter your last name"
+              oninvalid="this.setCustomValidity('Please Enter valid name')" oninput="setCustomValidity('')">
+            </label>
+          </div>
+          <div class="form-entries-container-items">
+            <label for="email">Email
+              <input type="email" id="email" name="email" required autocomplete="email" title="Enter your email"
+              oninvalid="this.setCustomValidity('Please Enter valid email')" oninput="setCustomValidity('')">
+            </label>
+            <label for="phone">Phone Number
+              <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" title="We promise we won't spam">
+            </label>
+          </div>
+          <div class="form-entries-container-items">
+            <label for="password" class="password-label">Password
+              <input type="password" id="password" name="password" required autocomplete="new-password" title="Think outside the box">
+            </label>
+            <label for="confirm-password">Confirm Password
+              <input type="password" id="confirm-password" name="password-confirmation" required autocomplete="new-password" title="Confirm new password">
+            </label>
+          </div>
+        </div>
+      </form>
+      <div class="submit-form-container">
+        <div>
+          <input type="submit" id="submit" form="create-account" value="Create Account"/>
+        </div>
+        <div class="log-in-item">Already have an account? <a href="#">Log in</a></div>
+      </div>
+    </div>
+  </body>
+</html>

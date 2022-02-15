@@ -1,0 +1,162 @@
+@font-face { /* Title font*/
+  font-family: ;
+  src: url();
+}
+@font-face { /*paragraph font*/
+  font-family: ;
+  src: url();
+}
+
+@font-face { /*form font*/
+  font-family: ;
+  src: url();
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+i {
+  font-size: 1em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(50, 1fr);
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-background {
+  background-image: url("/images/eberhard-grossgasteiger-YBPIQ3JPdvo-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  grid-row: span 3;
+  grid-column: span 21;
+}
+
+.background-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 21.7vh;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.background-text {
+  padding: 10px;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #eef3f1;
+}
+
+.form-header-container {
+  display: flex;
+  align-items: center;
+  grid-column: span 29;
+  background-image: linear-gradient(#516568, #eef3f1, #eef3f1);
+}
+
+.form-header-text {
+  padding: 13.5% 13.5% 0px 48px;
+}
+
+form {
+  grid-column: span 29;
+  width: 100%;
+  height: 100%;
+  background-color: #eef3f1;
+}
+
+.form-entries-container {
+  grid-column: span 29;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding-left: 48px;
+  row-gap: 25px;
+  /* flex-wrap: nowrap; */
+}
+
+.form-entries-container-items {
+  display: flex;
+  column-gap: 70px;
+  margin-top: 4px;
+  /* flex-wrap: wrap; */
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+input:not(input[type="submit"]) {
+  border-radius: 4px;
+  border: none;/*#aab3b3*/
+  box-shadow: none;
+  padding: 4px 6px;
+  width: 18.3vw;
+  background-color: #cfd7d6;
+  color: black;
+}
+
+input:not(input[type="submit"]):focus {
+  outline: #009fb5 solid 1px; /*override default black focus outline*/
+  box-shadow: 2px 2px 4px 0.3px #152c33;
+}
+
+input[type="submit"] {
+  padding: 16px 48px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  background-color: #49646b;
+  color: #ffffff;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ | Internet Explorer 10-11 | Microsoft Edge 
+::placeholder, :-ms-input-placeholder, ::-ms-input-placeholder { 
+  color: black;
+  opacity: 1; --->> Firefox
+} */
+
+.submit-form-container {
+  grid-column: span 29;
+  background-image: linear-gradient(#eef3f1, #eef3f1, #516568);
+  display: flex;
+  flex-direction: column;
+  padding-left: 48px;
+  row-gap: 25px;
+}
+
+.log-in-item {
+  font-size: 1.23rem;
+}
+
+.log-in-item a {
+  color: #b54319;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
