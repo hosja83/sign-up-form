@@ -1,5 +1,5 @@
 # Sign-up Form Template
-Live Webpage: Hold on tight, coming soon...
+Live Webpage: hosja83.github.io/sign-up-form/
 
 ## Tools
 Languages & Web Technologies
