@@ -6,10 +6,7 @@ Languages & Web Technologies
 - HTML
 - JavaScript
 - CSS
-
-Testing
-- Node 
-- Jest 
+- Node
 
 ## IDE
 Visual Studio
