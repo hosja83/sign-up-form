@@ -7,10 +7,11 @@ form.addEventListener('submit', handleMismatchPasswords);
 
 function handleMismatchPasswords(event) {
   event.preventDefault();
-  const exists = document.querySelector('small') || false;
-  if (exists) label.removeChild(document.querySelector('small'));
+  const exists = document.querySelector('small.match') || false;
+  if (exists) label.removeChild(document.querySelector('small.match'));
   if (password.value !== confirmation.value) {
     let mismatch = document.createElement('small');
+    mismatch.classList.add('match');
     label.appendChild(mismatch);
     mismatch.textContent = "*Passwords do not match";
     mismatch.style.color = "#c13838";
@@ -23,7 +24,7 @@ function handleMismatchPasswords(event) {
 }
 
 function removeMismatchEvents() {
-  let mismatch = document.querySelector('small');
+  let mismatch = document.querySelector('small.match');
   password.style.border = "none";
   confirmation.style.border = "none";
   password.removeEventListener('focus', removeMismatchEvents);

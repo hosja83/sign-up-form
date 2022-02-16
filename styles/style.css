@@ -43,6 +43,15 @@ i {
   font-size: 1em;
 }
 
+a {
+  text-decoration: none;
+}
+
+u, .credit{
+  color: #eef3f1;
+  font-size: .96rem;
+}
+
 .grid-container {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -58,15 +67,26 @@ i {
   height: 100%;
   grid-row: span 3;
   grid-column: span 21;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .background-text-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: 19.5vh;
   background-color: rgba(0, 0, 0, 0.35);
+}
+
+.credit-position-container {
+  width: 296px;
+  height: 16px;
+  position: relative;
 }
 
 .background-text {
@@ -76,6 +96,13 @@ i {
   color: #eef3f1;
   font-family: 'Kolker Brush', cursive; /*Fredericka the Great*/
   letter-spacing: .65cm;
+}
+
+.credit {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  letter-spacing: normal;
 }
 
 .form-header-container {
@@ -172,7 +199,6 @@ input[type="submit"] {
 .log-in-item a {
   color: #b54319;
   font-size: 1em;
-  text-decoration: none;
   font-weight: 600;
 }
 
