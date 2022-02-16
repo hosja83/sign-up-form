@@ -52,10 +52,14 @@ u, .credit{
   font-size: .96rem;
 }
 
+input {
+  min-width: 220px;
+}
+
 .grid-container {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(50, 1fr);
+  grid-template-columns: repeat(21, minmax(30.3px, 40.9px)) repeat(29, minmax(23.6px, 1fr)); /*1515px, 2045px*/ /*Prevent background image from getting sucked out of screen*/
   width: 100vw;
   height: 100vh;
 }
@@ -207,4 +211,11 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 }
 input[data-autocompleted] {
     background-color: transparent !important;
+}
+
+/* Fix overflow of grid container below 1320px */
+@media screen and (max-width: 1320px) {
+  body .grid-container {
+    overflow-y: hidden;
+  }
 }
