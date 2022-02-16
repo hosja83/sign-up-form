@@ -40,7 +40,7 @@ i {
 }
 
 .left-background {
-  background-image: url("/images/eberhard-grossgasteiger-YBPIQ3JPdvo-unsplash.jpg");
+  background-image: url("../images/eberhard-grossgasteiger-YBPIQ3JPdvo-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
