@@ -368,3 +368,58 @@ input[data-autocompleted] {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 520px) {
+  body .grid-container {
+    overflow-y: visible;
+    grid-template-rows: max-content;
+  }
+  .left-background {
+    grid-row: span 7;
+  }
+  .background-text-container {
+    margin-top: 14.5vh;
+    position: relative;
+    bottom: 30px;
+  }
+  form {
+    grid-row: span 7;
+    padding: 20px 0 0;
+  }
+  .form-entries-container {
+    display: block;
+  }
+  .form-entries-container-items {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    row-gap: 6px;
+  }
+  .form-header-container {
+    row-gap: 18px;
+  }
+  .form-header-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  input:not(input[type="submit"]) {
+    min-width: 260px;
+  }
+  label {
+    text-align: center;
+  }
+  .sign-up-text {
+    padding-bottom: 0;
+    margin-bottom: 2px;
+  }
+  div.form-entries-container-items:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .submit-items-container {
+    margin-bottom: 18px;
+    margin-top: 8px;
+  }
+  .log-in-item {
+    margin-top: 10px;
+  }
+}
