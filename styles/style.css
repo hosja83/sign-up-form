@@ -37,7 +37,6 @@ body {
 p, .sign-up-text {
   font-size: 1.45rem;
   font-weight: 600;
-  padding-left: 48px;
 }
 
 i {
@@ -124,6 +123,7 @@ input {
 
 .sign-up-text {
   padding-bottom: 18px;
+  padding-left: 48px;
 }
 
 form {
