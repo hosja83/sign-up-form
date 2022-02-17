@@ -151,7 +151,7 @@ form {
 label {
   display: flex;
   flex-direction: column;
-  font-size: 1.07rem;
+  font-size: 1rem;
   letter-spacing: 0.01cm;
   word-spacing: 0.03cm;
 }
