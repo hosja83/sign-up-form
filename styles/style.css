@@ -410,10 +410,10 @@ input[data-autocompleted] {
   }
   .sign-up-text {
     padding-bottom: 0;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
   }
   div.form-entries-container-items:nth-child(4) {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   .submit-items-container {
     margin-bottom: 18px;
