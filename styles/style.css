@@ -196,6 +196,12 @@ input[type="submit"] {
   box-shadow: 0px 2px 5px #152c33;/**/
 }
 
+.submit-items-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
 .log-in-item {
   font-size: 1.23rem;
 }
@@ -216,6 +222,89 @@ input[data-autocompleted] {
 /* Fix overflow of grid container below 1320px */
 @media screen and (max-width: 1320px) {
   body .grid-container {
-    overflow-y: hidden;
+    overflow: hidden;
   }
+}
+@media screen and (max-width: 1208px) {
+  body .grid-container {
+    overflow-y: visible;
+  }
+  .form-header-container {
+    width: 48vw;
+  }
+}
+@media screen and (max-width: 1197px) {
+  .form-title-container {
+    display: flex;
+    justify-content: center;
+  }
+  .form-entries-container {
+    row-gap: 10px;
+  }
+  .form-entries-container-items {
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 0;
+  }
+  .submit-form-container {
+    display: block;
+  }
+  .submit-items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    row-gap: 25px;
+  }
+  input:not(input[type="submit"]), .form-title-container, .submit-items-container {
+    width: 35.3vw;
+  }
+  .submit-form-container {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1086px) {
+  .form-header-container {
+    width: 47.8vw;
+  }
+}
+@media screen and (max-width: 1076px) {
+  .form-header-container {
+    width: 41.3vw;
+  }
+  input:not(input[type="submit"]), .form-title-container, .submit-items-container {
+    width: 29vw;
+  }
+}
+@media screen and (max-width: 986px) {
+  .form-header-text, .form-entries-container, .submit-form-container {
+    padding-left: 24px;
+  }
+  .form-header-container {
+    width: 39.1vw;
+  }
+  input:not(input[type="submit"]), .form-title-container, .submit-items-container {
+    width: 28.75vw;
+  }
+}
+@media screen and (max-width: 951px) {
+  .form-header-container {
+    width: 38.1vw;
+  }
+  .form-header-text, .form-entries-container, .submit-form-container {
+    padding-left: 16px;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  .form-header-container {
+    width: 37.1vw;
+  }
+  .form-header-text, .form-entries-container, .submit-form-container {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 922px) {
+  
 }
