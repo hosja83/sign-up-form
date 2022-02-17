@@ -138,7 +138,6 @@ form {
   height: 100%;
   padding-left: 48px;
   row-gap: 25px;
-  /* flex-wrap: nowrap; */
 }
 
 .form-entries-container-items {
@@ -226,9 +225,6 @@ input[data-autocompleted] {
   }
 }
 @media screen and (max-width: 1208px) {
-  body .grid-container {
-    overflow-y: visible;
-  }
   .form-header-container {
     width: 48vw;
   }
@@ -305,6 +301,62 @@ input[data-autocompleted] {
   }
 }
 
-@media screen and (max-width: 922px) {
-  
+@media screen and (max-width: 920px) {
+  .grid-container {
+    grid-template-rows: repeat(1, minmax(300px, 500px)) repeat(7, 1fr);
+    grid-template-columns: 1fr;
+  }
+  .left-background {
+    background-size: 100vw 100%;
+    grid-row: span 1;
+    grid-column: -1 / 1;
+  }
+  .form-header-container {
+    flex-direction: column;
+    grid-row: span 2;
+    grid-column: -1 / 1;
+    row-gap: 5px;
+    width: 100vw;
+    padding: 15px 0 15px;
+    background-image: linear-gradient(to bottom right, #516568, rgb(238, 243, 241, .2), rgb(238, 243, 241, .2), rgb(238, 243, 241, .2)), 
+                      linear-gradient(to bottom left, #516568, rgb(238, 243, 241, 0.2), rgb(238, 243, 241, .2), rgb(237, 242, 240, .2));
+  }
+  .form-header-text {
+    padding: 0;
+    text-align: center;
+  }
+  form {
+    grid-row: span 3;
+    grid-column: -1 / 1;
+    width: 100vw;
+    padding: 12px 0 12px
+  }
+  .form-entries-container {
+    flex-wrap: wrap;
+    padding: 0;
+    align-items: center;
+  }
+  .form-entries-container-items {
+    flex-direction: row;
+  }
+  .submit-form-container {
+    grid-row: span 2;
+    width: 100vw;
+    display: flex;
+    background-image: linear-gradient(to top right, #516568, rgb(238, 243, 241, .2), rgb(238, 243, 241, .2), rgb(238, 243, 241, .2)), 
+                      linear-gradient(to top left, #516568, rgb(238, 243, 241, 0.2), rgb(238, 243, 241, .2), rgb(237, 242, 240, .2));
+    padding: 14px 0 0;
+  }
+  .submit-items-container {
+    width: 100vw;
+    row-gap: 5px;
+    padding: 0;
+  }
+  div.form-title-container {
+    display: none;
+  }
+  .sign-up-text {
+    font-size: 1.45rem;
+    font-weight: 600;
+  }
 }
